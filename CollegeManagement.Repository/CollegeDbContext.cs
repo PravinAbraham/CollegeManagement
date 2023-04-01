@@ -11,6 +11,8 @@ namespace CollegeManagement.Data
         {
             _configuration = configuration;
         }
+
+
         public IDbConnection CreateConnection()
             => new SqlConnection(_configuration.GetConnectionString("DefaultConnection"));
     }

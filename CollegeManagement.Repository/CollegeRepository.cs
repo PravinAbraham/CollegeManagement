@@ -91,6 +91,8 @@ namespace CollegeManagement.Repository
         public List<College> GetById(int Id)
         {
                 string sql = "select * from FacultyDetails where Id = " + Id;
+
+
                 using (var connection = _collegeDbContext.CreateConnection())
                 {
                     connection.Open();
